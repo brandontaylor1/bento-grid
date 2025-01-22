@@ -1,0 +1,124 @@
+
+@font-face {
+    font-family: "DMSans-Medium";
+    src: url('./assets/fonts/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DMSans-MediumItalic";
+    src: url('./assets/fonts/DMSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans-Regular";
+    src: url('./assets/fonts/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* COLORS */
+:root {
+    --purple100: hsl(254, 88%, 90%);
+    --purple500: hsl(256, 67%, 59%);
+    
+    --yellow100: hsl(31, 66%, 93%);
+    --yellow500: hsl(39, 100%, 71%);
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);  
+    
+    --spacing-5: 40px;
+    --spacing-4: 32px;
+    --spacing-3: 24px;
+    --spacing-2: 16px;
+    --spacing-1: 8px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-family: "DMSans-Medium", sans-serif;
+    font-size: 62px;
+    line-height: 93.5%;
+    letter-spacing: -3px;
+}
+
+h2 {
+    font-family: "DMSans-Medium", sans-serif;
+    font-size: 40px;
+    line-height: 90%;
+    letter-spacing: -2px;
+}
+
+h3 {
+    font-family: "DMSans-Medium", sans-serif;
+    font-size: 32px;
+    line-height: 87.5%;
+    letter-spacing: -2px;
+}
+
+p {
+    font-family: "DMSans-Regular", sans-serif;
+    font-size: 24px;
+    line-height: 87.5%;
+    letter-spacing: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: var(--spacing-5);
+    padding: var(--spacing-5), var(--spacing-4);
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 40px 32px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+
+    }
+
+    .grid-item-1 {
+        background-color: var(--purple500);
+        color: var(--white);
+        text-align: center;
+        padding: 40px 32px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .grid-item-1 h1 {
+        padding-bottom: 24px;
+    }
+
+    .grid-item-1 img {
+        width: 192px;
+    }
+} 

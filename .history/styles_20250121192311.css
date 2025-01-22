@@ -1,0 +1,23 @@
+
+@font-face {
+    font-family: "DM Sans-Medium";
+    src: url('./assets/fonts/DMSans-Medium.ttf') format('tff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DMSans-MediumItalic.tff";
+    src: url('./assets/fonts/DMSans-MediumItalic.ttf') format('tff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+h1 {
+    color: red;
+    font-family: "DM Sans-Medium";
+    font-size: 24px;
+    
+}

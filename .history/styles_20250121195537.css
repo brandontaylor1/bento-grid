@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: "DMSans-Medium";
+    src: url('./assets/fonts/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DMSans-MediumItalic";
+    src: url('./assets/fonts/DMSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans-Regular";
+    src: url('./assets/fonts/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* COLORS */
+:root {
+    --purple100: hsl(254, 88%, 90%);
+    --purple500: hsl(256, 67%, 59%);
+    
+    --yellow100: hsl(31, 66%, 93%);
+    --yellow500: hsl(39, 100%, 71%);
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);   
+}
+
+/* FONTS */
+.text-preset-1 {
+    font-family: "DMSans-Medium", sans-serif;
+    font-size: 62px;
+    line-height: 93.5%;
+    letter-spacing: -3px;
+}
+
+
