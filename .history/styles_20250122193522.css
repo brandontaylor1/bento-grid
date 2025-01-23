@@ -98,8 +98,7 @@ p {
 }
 
 .container {
-    height: 100vh;
-    width: 100%;
+    height: auto;
     background-color: #F6F5F6;
     display: flex;
     justify-content: center;
@@ -107,6 +106,7 @@ p {
 }
 
 .grid-container {
+    height: 100%;
     width: 100%;
     max-width: 1440px;
     display: grid;
@@ -179,11 +179,11 @@ p {
 .grid-item-4 {
     grid-area: c;
     width: 256px;
-    height: auto;
+    height: 603px;
     padding: 32px;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 10px;
     background-color: var(--purple100);
     overflow: hidden;
@@ -225,7 +225,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
 }
 
 .grid-item-6 h2 {
@@ -281,76 +280,6 @@ p {
 
 /* RESPONSIVE */
 
-/* TABLET */
-@media screen and (max-width: 878px) {
-    .container {
-        height: auto;
-        background-color: #F6F5F6;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-areas: 
-        " b b b b "
-        " d d e e "   
-        " c c c c "
-        " h h h h "
-        " g g g g "
-        " a a f f ";
-        gap: var(--spacing-4);
-        padding: 52px 40px 75px 40px;
-    }
-
-    .grid-item-1 {
-        width: 100%;
-    }
-
-    .grid-item-2 {
-        width: 100%;
-    }
-
-    .grid-item-3 {
-        width: 100%;
-    }
-
-    .grid-item-4 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .grid-item-4 img {
-        width: 90%;
-        padding: 24px 0; 
-    }
-
-    .grid-item-5 {
-        width: 100%;
-
-    }
-
-    .grid-item-6 {
-        width: 100%;
-    }
-
-    .grid-item-6 img {
-        width: 50%;
-    }
-
-    .grid-item-7 {
-        width: 100%;
-    }
-
-    .grid-item-8 {
-        width: 100%;
-    }
-
-}
-
-
-
 /* MOBILE */
 @media screen and (max-width: 480px) {
     .container {
@@ -380,7 +309,6 @@ p {
         border-radius: 10px;
         width: 100%;
         grid-area: a;
-        height: auto;
     }
 
     .grid-item-1 h1 {
@@ -450,7 +378,6 @@ p {
         justify-content: center;
         text-align: center;
         grid-area: e;
-        height: auto;
     }
 
     .grid-item-5 img {

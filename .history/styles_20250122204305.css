@@ -107,6 +107,7 @@ p {
 }
 
 .grid-container {
+    height: 100%;
     width: 100%;
     max-width: 1440px;
     display: grid;

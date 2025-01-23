@@ -98,8 +98,9 @@ p {
 }
 
 .container {
-    height: 100vh;
+    height: auto;
     width: 100%;
+    max-width: 1440px;
     background-color: #F6F5F6;
     display: flex;
     justify-content: center;
@@ -107,6 +108,7 @@ p {
 }
 
 .grid-container {
+    height: 100%;
     width: 100%;
     max-width: 1440px;
     display: grid;
@@ -282,7 +284,8 @@ p {
 /* RESPONSIVE */
 
 /* TABLET */
-@media screen and (max-width: 878px) {
+
+@media screen and (max-width: 808px) {
     .container {
         height: auto;
         background-color: #F6F5F6;
@@ -380,7 +383,6 @@ p {
         border-radius: 10px;
         width: 100%;
         grid-area: a;
-        height: auto;
     }
 
     .grid-item-1 h1 {
@@ -450,7 +452,6 @@ p {
         justify-content: center;
         text-align: center;
         grid-area: e;
-        height: auto;
     }
 
     .grid-item-5 img {
