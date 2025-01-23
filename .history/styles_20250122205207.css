@@ -107,7 +107,7 @@ p {
 }
 
 .grid-container {
-    width: auto;
+    width: 1200px;
     max-width: 1440px;
     display: grid;
     grid-template-areas: 
@@ -118,7 +118,7 @@ p {
     " f f g g h h h h"
     " f f g g h h h h";
     gap: 32px;
-    padding: 52px 40px 75px 40px;
+    /* padding: 80px 160px 80px 160px; */
     background-color: #F6F5F6;
 }
 
@@ -212,10 +212,7 @@ p {
 
 .grid-item-5 img {
     width: 250px;
-}
 
-.grid-item-5 h3 {
-    color: var(--white);
 }
 
 .grid-item-6 {
@@ -285,7 +282,7 @@ p {
 /* RESPONSIVE */
 
 /* TABLET */
-@media screen and (max-width: 978px) {
+@media screen and (max-width: 878px) {
     .container {
         height: auto;
         background-color: #F6F5F6;
@@ -301,7 +298,7 @@ p {
         " g g g g "
         " a a f f ";
         gap: var(--spacing-4);
-        padding: 32px 16px;
+        padding: 52px 40px 75px 40px;
     }
 
     .grid-item-1 {
