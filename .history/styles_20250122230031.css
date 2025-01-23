@@ -230,6 +230,7 @@ p {
     color: var(--white);
     font-size: 40px;
     font-weight: 400;
+    width: 100%;
 }
 
 .grid-item-6 {

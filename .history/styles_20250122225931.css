@@ -228,7 +228,7 @@ p {
 
 .grid-item-5 h3 {
     color: var(--white);
-    font-size: 40px;
+    font-size: var(--font-size-h2);
     font-weight: 400;
 }
 
