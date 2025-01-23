@@ -302,7 +302,6 @@ p {
         " a a f f ";
         gap: var(--spacing-4);
         padding: 32px 16px;
-        width: 100%;
     }
 
     .grid-item-1 {
